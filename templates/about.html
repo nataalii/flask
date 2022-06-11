@@ -1,0 +1,18 @@
+{% extends 'base.html '%}
+
+{% block title%} About us {%endblock%}
+
+{%block content%}
+{{super()}}
+    <h1 class="about1">
+        Website <br>where you can <br>buy <br>artworks. <3
+    </h1>
+    <div class="line1"></div>
+    <p class="p1">Love, Natalie.</p>
+    <div class="line2"></div>
+    <img class="industria" src="{{ url_for('static', filename='img/industria.jpg') }}">
+    <img class="qalaqi" src="{{ url_for('static', filename='img/qalaqi.jpg') }}">
+    <p class="industria1"><span class="span1">ინდუსტრია</span><br>გიორგი კობიაშვილი</p>
+    <p class="qalaqi1"><span class="span1">ქალაქი</span> <br>გიორგი კობიაშვილი</p>
+
+{%endblock%}
